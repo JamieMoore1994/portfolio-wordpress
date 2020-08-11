@@ -1,0 +1,131 @@
+.master__nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    padding: 3rem 1rem;
+    position: relative;
+
+    &-links {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-grey-light-2;
+        font-weight: 300;
+        position: relative;
+        transition: color 200ms ease;
+        margin-right: 2rem;
+        font-size: 1.5rem;
+
+        &:hover,
+        &:focus {
+            color: $color-grey-light;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: .2rem;
+            border-radius: .2rem;
+            width: 100%;
+            background-color: $color-grey-light;
+            transform-origin: bottom right;
+            transform: scale(0);
+            transition: transform 500ms ease;
+        }
+
+        &:hover::after,
+        &:focus::after {
+            transform-origin: bottom left;
+            transform: scale(1);
+        }
+
+        &.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: .2rem;
+            border-radius: .2rem;
+            width: 100%;
+            background-color: $color-grey-light;
+            transform: unset;
+        }
+    }
+
+    li:nth-of-type(3) a {
+        margin-right: 0;
+    }
+}
+
+.master__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    text-align: center;
+
+    &.btn {
+        font-size: 1.5rem;
+        animation: animateButton 700ms ease-in;
+
+        @media screen and (min-width: 46em) {
+            font-size: 2.4rem;
+            padding: 2rem 3rem;
+        }
+    }
+}
+
+/*------------------------------*/
+// Media queries
+
+// 500px
+@media screen and (min-width: $xs) {
+    .master__nav {
+
+        &-links {
+            margin-right: 5rem;
+        }
+
+    }
+}
+
+/*------------------------------*/
+
+// 750px
+@media screen and (min-width: $m) {
+    .master__nav {
+
+        &-links {
+            margin-right: 6rem;
+        }
+
+        li:nth-of-type(3) a {
+            margin-right: 0;
+        }
+
+    }
+}
+
+/*------------------------------*/
+
+// 960px
+@media screen and (min-width: $l) {
+    .master__nav {
+
+        &-links {
+            margin-right: 10rem;
+            font-size: 2.2rem;
+        }
+
+        li:nth-of-type(3) a {
+            margin-right: 0;
+        }
+
+    }
+}
+
+/*------------------------------*/

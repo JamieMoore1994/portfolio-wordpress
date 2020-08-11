@@ -1,0 +1,62 @@
+/*--------------------------------------------
+            Global blog styles
+--------------------------------------------*/
+.blog__credit {
+    color: $color-gold-darker;
+}
+
+.blog__links {
+    color: $color-gold-darker;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+
+    &:hover,
+    &:focus {
+        background-color: $color-gold-darker;
+        color: $color-grey-light;
+        text-decoration: none;
+        padding: .1rem;
+    }
+}
+
+/*--------------------------------------------
+            Industry Blog Page
+--------------------------------------------*/
+
+
+/*--------------------------------------------
+        Portfolio Development Blog Page
+--------------------------------------------*/
+.portfolio__header {
+    background-image: url(../assets/img/portfolio-blog-bg.svg);
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.portfolio__header-title {
+    margin: 2rem 0;
+    color: $color-grey-light;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    line-height: 1.2;
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 0 1.5rem;
+    animation: animatePortfolioTitle 700ms ease;
+}
+
+@keyframes animatePortfolioTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate();
+    }
+}
+
+

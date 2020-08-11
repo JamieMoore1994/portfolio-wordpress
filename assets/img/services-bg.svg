@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1921 1040.88">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="70.75" y1="909.93" x2="1887.97" y2="-104.69" gradientTransform="matrix(1, 0, 0, -1, 0, 1039.99)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.58" stop-color="#101d2c" stop-opacity="0.9"/>
+      <stop offset="0.7" stop-color="#13202f" stop-opacity="0.9"/>
+      <stop offset="0.78" stop-color="#1c2b3a" stop-opacity="0.89"/>
+      <stop offset="0.84" stop-color="#2c3d4d" stop-opacity="0.88"/>
+      <stop offset="0.9" stop-color="#435767" stop-opacity="0.86"/>
+      <stop offset="0.95" stop-color="#617989" stop-opacity="0.83"/>
+      <stop offset="1" stop-color="#84a2b3" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#88a6b7" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <title>services-bg</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="Layer_2-2" data-name="Layer 2">
+        <g id="Layer_1-2-2" data-name="Layer 1-2">
+          <path class="cls-1" d="M1840.28,214.88c-80.31-3.56-152-28.82-229-52-14.12-4.25-28.4-8.54-43.12-9.5-17-1.11-33.89,2.24-50.71,4.85A594.93,594.93,0,0,1,1190.83,116c-14.46-6.3-29-13.27-44.63-15.09-15.85-1.85-31.76,1.7-47.46,4.59A588.53,588.53,0,0,1,768.11,70.23c-16.71-7-33.37-14.78-51.29-17.43-22-3.24-44.17,1.51-66.09,5A587.91,587.91,0,0,1,324.85,16C311,9.87,297.08,3.18,282.07,1.18,265.7-1,249.19,2.55,232.93,5.42A618.93,618.93,0,0,1,.5,1.72V1040.38h1920V213.31A620.73,620.73,0,0,1,1840.28,214.88Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

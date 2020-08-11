@@ -1,0 +1,304 @@
+.master__header {
+    background-image: url(../assets/img/main-bg.svg);
+    background-size: cover;
+    height: 55vh;
+
+    .master__heading {
+        font-size: 4rem;
+        line-height: 1.1;
+        font-weight: 900;
+        color: $color-grey-light;
+        text-transform: uppercase;
+        padding: 2rem 1rem 1rem 1rem; 
+        letter-spacing: 2px;
+
+        @media screen and (min-width: 46em) {
+            font-size: 6rem;
+        }
+    }
+
+    .master__job {
+        color: $color-grey-light-2;
+        font-size: 2rem;
+        padding: 0 1rem 1.5rem 0;
+        text-align: center;
+        font-weight: 300;
+        line-height: 1.2;
+
+        @media screen and (min-width: 46em) {
+            font-size: 3rem;
+        }
+    }
+}
+
+@keyframes animateButton {
+    0% {
+        opacity: 0;
+        transform: translateY(4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/*--------------------------------------------
+                About Me Section
+--------------------------------------------*/
+.about {
+    &__me {
+        text-align: center;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: $color-primary;
+
+        @media screen and (min-width: 44em) {
+            padding: 2rem 0;
+        }
+    }
+
+    &__photo-jamie {
+        padding: 2rem 5rem;
+    }
+
+    &__img-jamie {
+        border-radius: 50%;
+    }
+
+    &__description {
+        padding: 1.2rem 2rem;
+        font-size: 1.5rem;
+        color: $color-grey-dark;
+
+        @media screen and (min-width: 44em) {
+            &:nth-of-type(1) {
+                align-self: center;
+            }
+        }
+    }
+
+    &__bold-text {
+        color: $color-gold-darker;
+        font-weight: 900;
+    }
+
+    & .btn {
+        font-size: 1.7rem;
+        padding: 1.5rem 4rem;
+    }
+
+    &__cv-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+    }
+
+    @media screen and (min-width: 44em) {
+        &__container {
+            max-width: 120rem;
+            margin: 0 auto;
+            
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: min-content min-content;
+
+            @media screen and (min-width: 60em) {
+                padding: 4rem 0 0 0;
+                grid-template-columns: repeat(4, 1fr);
+            }
+    
+        }
+    }
+}
+
+/*--------------------------------------------
+            Services Section
+--------------------------------------------*/
+.services {
+    background-image: url(../assets/img/services-bg.svg);
+    background-size: cover;
+    padding: 7rem 0 0 0;
+
+    &__title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: $color-grey-light;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 3rem;
+        padding: 3rem 0;
+        font-weight: 700;
+
+        @media screen and (min-width: 47em) {
+            font-size: 3.2rem;
+            padding: 5rem 0;
+        }
+
+        @media screen and (min-width: 120em) {
+            margin-top: 6rem;
+        }
+
+        /* Was an issue when checking on 4k tv dimensions, just being safe */
+        @media screen and (min-width: 193em) {
+            margin-top: 15rem;
+        }
+    }
+
+    &__content {
+        padding: 2rem;
+    }
+
+    &__items {
+        list-style-type: none;
+
+        @media screen and (min-width: 47em) {
+            max-width: 120rem;
+            margin: 0 auto;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1vw;
+        }
+    }
+
+    &__item {
+        padding: 2rem 0;
+        
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-column-gap: 2vw;
+    
+        justify-items: start;
+        align-content: start;
+
+        &-title {
+            font-size: 2rem;
+            line-height: 1.1;
+            color: $color-grey-light;
+            font-weight: 700;
+            justify-self: start;
+        }
+
+        @media screen and (min-width: 47em) {
+            grid-column-gap: 1vw;
+        }
+    }
+
+    &__icon {
+        grid-row: 1 / span 2;
+        fill: $color-grey-light;
+        height: 4rem;
+        width: 4rem;
+    }
+
+    &__description {
+        color: $color-grey-light;
+        font-weight: 600;
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+}
+
+/*--------------------------------------------
+            Contact Form
+--------------------------------------------*/
+.contact {
+    padding: 5rem 0;
+
+    &__form {
+        @media screen and (min-width: 39em) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: min-content min-content max-content;
+            grid-gap: 1rem;
+        }
+
+        @media screen and (min-width: 48em) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            grid-column: 1 / span 2;
+        }
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-right: 2rem;
+        font-size: 1.9rem;
+        line-height: 1.2;
+    }
+
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        fill: $color-primary;
+    }
+
+    &__form-container {
+        padding: 1.3rem 2rem;
+
+        @media screen and (min-width: 48em) {
+            max-width: 80rem;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__label-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        @media screen and (min-width: 39em) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content min-content;
+            grid-row-gap: 1rem;
+
+            &:nth-child(4) {
+                grid-row: 3;
+                grid-column: 1 / span 2;
+            }
+        }
+    }
+
+    &__label {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 0 0 .6rem 0;
+
+        &-guide {
+            font-size: 1.2rem;
+            margin-left: .4rem;
+            text-transform: none;
+            font-weight: 400;
+        }
+    }
+
+    &__form input,
+    &__form textarea {
+        margin-bottom: 1.2rem;
+        font-family: inherit;
+    }
+
+    &__input {
+        padding: 1rem;
+        border: .2rem solid $color-gold-primary;
+    }
+
+    &__form input::placeholder,
+    &__form textarea::placeholder {
+        color: $color-grey-dark;
+        font-weight: 300;
+    }   
+}

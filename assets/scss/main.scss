@@ -1,0 +1,21 @@
+@import "global";
+@import 'classes';
+@import "mixins";
+@import 'typography';
+@import "variables";
+
+// Pages
+@import "pages/blog-designs";
+@import "pages/blogs";
+@import "pages/cv";
+@import "pages/index";
+@import "pages/portfolio";
+@import "pages/projects";
+@import "pages/all-blogs"; 
+
+// Components
+@import "components/footer";
+@import "components/master-nav";
+@import "components/accessibility";
+@import 'components/buttons';
+

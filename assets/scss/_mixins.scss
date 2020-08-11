@@ -1,0 +1,11 @@
+// Max width from 960px
+@mixin maxWidthSmall {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+// Max width 1200px
+@mixin maxWidthMedium {
+    max-width: 1200px;
+    margin: 0 auto;
+}

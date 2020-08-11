@@ -1,0 +1,55 @@
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $color-button-background;
+    color: $color-button-text;
+    padding: 1.3rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 200ms ease-in;
+    animation: openingBtn 1000ms ease;
+}
+
+
+.btn:hover,
+.btn:focus {
+    background-color: $color-gold-darker;
+    box-shadow: 0 2rem 5rem (0,0,0, .8);
+    transform: translateY(-.3rem);
+}
+
+.btn:active {
+    transform: translateY(-.1rem);
+}
+
+/*------------------------------*/
+// Keyframes
+
+// 1080px
+@keyframes openingBtn {
+    0% {
+        transform: translateY(4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*------------------------------*/
+
+/*------------------------------*/
+// Media queries
+
+// 1080px
+@media screen and (min-width: $xl) {
+    .btn {
+       font-size: 1.8rem; 
+    }
+}
+
+/*------------------------------*/

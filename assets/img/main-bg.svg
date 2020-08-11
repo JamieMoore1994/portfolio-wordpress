@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 271.53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="135.76" x2="1920" y2="135.76" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0" stop-color="#eef2f5" stop-opacity="0.99"/>
+      <stop offset="0" stop-color="#b7c9d4" stop-opacity="0.94"/>
+      <stop offset="0" stop-color="#95b0bf" stop-opacity="0.91"/>
+      <stop offset="0" stop-color="#88a6b7" stop-opacity="0.9"/>
+      <stop offset="0" stop-color="#7e9bac" stop-opacity="0.9"/>
+      <stop offset="0" stop-color="#7893a4" stop-opacity="0.9"/>
+      <stop offset="0" stop-color="#7691a2" stop-opacity="0.9"/>
+      <stop offset="0" stop-color="#516878" stop-opacity="0.9"/>
+      <stop offset="0.04" stop-color="#354757" stop-opacity="0.9"/>
+      <stop offset="0.12" stop-color="#20303f" stop-opacity="0.9"/>
+      <stop offset="0.2" stop-color="#142231" stop-opacity="0.9"/>
+      <stop offset="0.24" stop-color="#101d2c" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <title>main-bg</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="Layer_2-2" data-name="Layer 2">
+        <g id="Layer_1-2-2" data-name="Layer 1-2">
+          <path class="cls-1" d="M107.54,254.55c20.7-1.14,42.9-1.53,62.89.08,13.72,1.11,25.45,4.16,39.5,4.67,32.09,1.15,66-7.93,96-13.08,46.1-7.9,97.05-8.48,140.54-1.6,8.56,1.36,17.28,3,26.74,2.57s18.11-2.93,26.58-5.13c57.2-14.85,126.4-19.23,185.79-11.76,11.9,1.5,24,3.47,36.8,2.48,10.19-.8,19.48-3.4,28.75-5.69,58.06-14.33,127.71-17.87,186.48-9.46,8.77,1.26,17.76,2.78,27.3,2.14,8.31-.56,15.89-2.7,23.35-4.62,60.71-15.61,134.42-19.7,196.5-10.89,7.55,1.07,15.21,2.33,23.43,2,9.86-.38,19-3,27.82-5.23,58-14.83,128-18.91,187.56-10.93,9.67,1.3,19.43,2.91,29.9,2.5,13.46-.53,25.65-4.28,37.75-7.39,36-9.23,77.59-13.58,117-12.21,25.34.88,49.58,4,75.07,4.48,28.71.5,44.46-4.27,69.33-9.79,20.28-4.51,45.63-6.6,67.4-7.8a524.63,524.63,0,0,1,100,3.74V0H0V271.53C32.19,262.69,68.69,256.7,107.54,254.55Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

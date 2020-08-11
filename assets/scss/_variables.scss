@@ -1,0 +1,39 @@
+$color-primary: rgb(16, 29, 44);
+$color-secondary: rgb(136, 166, 183);
+$color-image-tint: rgba(16,29,44,0.5);
+$color-primary-lighter: rgba(16, 29, 44, .9);
+
+$color-primary-gradient: linear-gradient(to right, rgba(16,29,44,.9), rgba(136,166,183,1));
+
+$color-gradient-projects: linear-gradient(to bottom, rgba(16,29,44,.9), rgba(136,166,183, .9));
+
+// Greys
+$color-grey-light: #f9f7f6;
+$color-grey-light-2: #e0dedd;
+$color-grey-dark: #595959;
+
+// Complimentary colours
+$color-gold-primary: #8A6333;
+$color-gold-darker: #73532B;
+
+$color-button-background: #8A6333;
+$color-button-text: #ffffff;
+
+$color-blog-buttons: #e3e7f1;
+$color-button-hover: #C6CEE2;
+
+$color-blog-background: linear-gradient(to right, rgba(138, 99, 51, 0.1), rgba(138, 99, 51, 0.3));
+
+
+// Breakpoints
+$t: 350px;
+$xxs: 400px;
+$xs: 500px;
+$s: 600px;
+$m: 750px;
+$l: 960px;
+$xl: 1080px;
+$xxl: 1200px;
+$xxxl: 1400px;
+$sl: 1600px;
+

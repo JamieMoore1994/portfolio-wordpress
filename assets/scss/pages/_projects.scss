@@ -1,0 +1,249 @@
+/*--------------------------------------------
+            Live Music Page
+--------------------------------------------*/
+.projects__bg.projects__examples {
+    background-image: url(../assets/img/portfolio-blog-bg.svg);
+    background-size: cover;
+    height: 70vh;
+
+    @media screen and (min-width: 20em) {
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 28em) {
+    .projects__bg {
+        height: 50vh;
+    }
+}
+
+.music__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.3rem 0;
+}
+
+.projects__page-title {
+    font-size: 3rem;
+    color: $color-grey-light;
+    line-height: 1.3;
+    letter-spacing: .2rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 39em) {
+        font-size: 4rem;
+    }
+}
+
+.my-projects {
+    padding: 2rem 1rem;
+
+    & p {
+        font-size: 1.5rem;
+        color: var(--color-grey-dark);
+
+        @media screen and (min-width: 39em) {
+            font-size: 1.8rem;
+        }
+    }
+
+    & figcaption {
+        color: $color-gold-primary;
+        font-style: italic;
+        font-size: 1.3rem;
+        line-height: 1.3;
+        padding: 0 1.2rem 1.2rem 0;
+        max-width: 90%;
+
+        @media screen and (min-width: 39em) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+/* Project section start */
+.project {
+    margin: 3rem 0;
+
+    &__title {
+        color: $color-gold-darker;
+        padding: 1rem 0;
+        font-size: 2.5rem;
+    }
+
+    &__images {
+        padding: 4rem 5rem;
+
+        & img:nth-of-type(1) {
+            transform: rotate(10deg);
+            animation: animateProjectImageOne 500ms ease-in;
+        }
+        
+        & img:nth-of-type(2) {
+            transform: rotate(-10deg);
+            animation: animateProjectImageTwo 500ms ease-in;
+        }
+    }
+
+    @media screen and (min-width: 39em) {
+        & {
+            max-width: 75em;
+            margin: 0 auto;
+
+            &__title {
+                font-size: 3.5rem;
+                margin: 2rem 0;
+            }
+        
+        
+            &__images {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: .8rem;
+                position: relative;
+                padding: 1rem 2rem;
+
+                & img:nth-of-type(1) {
+                    transform: rotate(10deg);   
+                }
+            
+                & img:nth-of-type(2) {
+                    transform: rotate(-10deg);   
+                }
+            }
+
+            &__description {
+                margin-top: 2.5rem;
+            }
+        }
+
+    }
+}
+
+
+@keyframes animateProjectImageOne {
+    0% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes animateProjectImageTwo {
+    0% {
+        opacity: 0;
+        transform: translateX(4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/*Project role section - this is a seperate section */
+.project__role {
+    margin: 3rem 0;
+
+    &__role-title {
+        color: var(--color-gold-darker);
+        font-size: 2rem;
+        margin: 0 0 1.2rem 0;
+    }
+
+    .project__logo {
+        float: left;
+        shape-outside: circle(50%);
+        shape-margin: 2vw;
+        padding: 0 1rem 0 0;
+    }
+
+    .project__logo img {
+        border-radius: 50%;
+    }
+}
+
+@media screen and (min-width: 39em) {
+    .project__role {
+        max-width: 75em;
+        margin: 2rem auto;
+    }
+
+    .project__logo {
+        shape-margin: 0;
+    }
+
+    .project__role-title {
+        font-size: 2.8rem;
+    }
+
+}
+
+/* Project success section */
+
+.project__success {
+    margin: 2rem 0;
+
+    .project__design-ideas {
+        margin: 1.3rem 0;
+
+        & img {
+            box-shadow: 0 1rem 1rem rgba(0,0,0,.5);
+        }
+
+        & figcaption {
+            margin-top: 1.2rem;
+        }
+    }
+
+    & p {
+        padding-bottom: 1rem;
+    }
+
+    @media screen and (min-width: 39em) {
+        max-width: 75em;
+        margin: 5rem auto;
+    }
+}
+
+/* Project critique section */
+.project__critique {
+    margin-bottom: 2rem;
+
+    & p {
+        padding-bottom: 1rem;
+    }
+
+    @media screen and (min-width: 39em) {
+        max-width: 75em;
+        margin: 0 auto;
+    }
+}
+
+/*--------------------------------------------
+            Plan it project page
+--------------------------------------------*/
+
+.project__description p {
+    padding-bottom: 1rem;
+}
+
+.project__role p {
+    padding-bottom: 1rem;
+}
+
+.project__logo.plan img {
+    border-radius: 10rem;
+    margin: 1rem 2.5rem 0 0;
+}
+
+@media screen and (min-width: 39em) {
+    .project__logo.plan img {
+        margin: 2rem 3rem 0 0;
+    }
+}
