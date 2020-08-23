@@ -11,7 +11,7 @@
     <section class = "master__title">
         <h1 class="master__heading">Hi, I'm Jamie Moore</h1>
         <p class="master__job">I make responsive, accessible, useable websites.</p>
-        <a href="/portfolio.php" class="btn" title = "Portfolio">View My Work</a>
+        <a href="/portfolio" class="btn" title = "Portfolio">View My Work</a>
     </section>
 </header>
 
@@ -20,7 +20,7 @@
         <h2 class="about__me">A little about me</h2>
         <div class = about__container>
         <figure class="about__photo-jamie">
-            <img src="assets/img/jamie-moore-optimised.JPG" alt="Photograph of Jamie Moore" class="about__img-jamie">
+            <img src="<?= get_stylesheet_directory_uri() ?>/assets/img/jamie-moore-optimised.JPG" alt="Photograph of Jamie Moore" class="about__img-jamie">
         </figure>
             <p class="about__description"><span class = "about__bold-text">I am a front-end developer that is</span> currently a third-year student studying Web Development at The Manchester Metropolitan University based in Manchester. This course has equipped me with the knowledge and skills to build high quality websites that are responsive, accessible and usable to all users.</p>
 
@@ -125,5 +125,5 @@
     </section>
 
 <?php
-    include "footer.php";
+    get_footer();
 ?>

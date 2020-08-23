@@ -15,7 +15,7 @@
 
             <!--Author details-->
             <div class = "blog__author">
-                <img src="assets/img/jamie-moore-optimised.JPG" class = "blog__author--img" alt="An image of Jamie Moore">
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/jamie-moore-optimised.JPG" class = "blog__author--img" alt="An image of Jamie Moore">
                 <span class = "blog__author-name">By Jamie Moore</span>
                 <span class = "blog__author-date">Posted on: 20/10/19</span>
             </div>

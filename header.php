@@ -12,11 +12,11 @@
     </script>
 
     <meta charset="utf-8">
+    <?php wp_head(); ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> <?php echo $title; ?> </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name = "description" content= "<?php echo $description;?>">
-    <link rel="stylesheet" type="text/css" media="screen" href="dest/main.css">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One%7cLobster+Two%7cPoppins&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/b65bf85635.js" crossorigin="anonymous" async></script>
@@ -45,13 +45,13 @@
     <nav class="master__navigation">
         <ul class="master__nav">
             <li>
-                <a href="/index.php" title = "Homepage" class = "master__nav-links <?php if($page=='home'){echo 'active';}?>">Home</a>
+                <a href="/" title = "Homepage" class = "master__nav-links <?php if($page=='home'){echo 'active';}?>">Home</a>
             </li>
             <li>
-                <a href="/portfolio.php" title = "Portfolio" class = "master__nav-links <?php if($page=='portfolio'){echo 'active';}?>">Portfolio</a>
+                <a href="/portfolio" title = "Portfolio" class = "master__nav-links <?php if($page=='portfolio'){echo 'active';}?>">Portfolio</a>
             </li>
             <li>
-                <a href="/blog.php" title = "Blog" class = "master__nav-links <?php if($page=='blog'){echo 'active';}?>">Blog</a>
+                <a href="/blogs" title = "Blog" class = "master__nav-links <?php if($page=='blog'){echo 'active';}?>">Blog</a>
             </li>
         </ul>
     </nav>

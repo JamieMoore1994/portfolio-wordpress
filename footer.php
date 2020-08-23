@@ -54,9 +54,9 @@
                     <h4 class="footer__links-title">Some Useful Links</h4>
                         <ul class="footer__links">
                             <li class="footer__link"><a href="/" title = "Homepage">Home</a></li>
-                            <li class="footer__link"><a href="/blog.php" title = "Blogs page">Blogs</a></li>
-                            <li class="footer__link"><a href="/portfolio.php" title = "Portfolio page">Portolio</a></li>
-                            <li class="footer__link"><a href="/cv.php" title = "My CV">CV</a></li>
+                            <li class="footer__link"><a href="/blog" title = "Blogs page">Blogs</a></li>
+                            <li class="footer__link"><a href="/portfolio" title = "Portfolio page">Portolio</a></li>
+                            <li class="footer__link"><a href="/cv" title = "My CV">CV</a></li>
                         </ul>
                 </div>
             </div>
@@ -68,5 +68,6 @@
             <a href = "#top" class = "btn back-top" title = "Top of page">Back To Top</a>
     </footer>
 </main>
+<?php wp_footer(); ?>
 </body>
 </html>
