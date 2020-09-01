@@ -30,13 +30,13 @@
             </div>
             
             <div class="about__cv-btn">
-                <a href="/cv.php" class="btn" title = "See my CV">View My CV</a>
+                <a href="/cv" class="btn" title = "See my CV">View My CV</a>
             </div>
     </article>
 
     <!--Services grid section-->
     <section class="services">
-        <h3 class="services__title">What i Do</h3>
+        <h3 class="services__title">What I Do</h3>
         <div class = "services__content">
             <ul class = "services__items">
                 <li class="services__item">
@@ -44,7 +44,7 @@
                     class = "services__icon">
                     <title id = "html">Follow Jamie Moore on Linked In</title>
                         <desc>The LinkedIn logo</desc>
-                        <use xlink:href="assets/img/sprite.svg#icon-html-five"></use>
+                        <use xlink:href="<?= get_stylesheet_directory_uri() ?>/assets/img/sprite.svg#icon-html-five"></use>
                     </svg>
                     <h4 class="services__item-title">HTML</h4>
                     <p class="services__description">The beginning of every website I develop begins with marking up the site in clean and semantic HTML. Utilising the semantics of HTML5 enables you not only to give meaning and structure to a webpage, but you are enhancing its search engine optimisation as-well as ensuring the website is usable and accessible to all users. The importance of semantic HTML is paramount in every website I build.</p>
@@ -54,7 +54,7 @@
                     class = "services__icon">
                     <title id = "html">Follow Jamie Moore on Linked In</title>
                         <desc>The LinkedIn logo</desc>
-                        <use xlink:href="assets/img/sprite.svg#icon-css3"></use>
+                        <use xlink:href="<?= get_stylesheet_directory_uri() ?>/assets/img/sprite.svg#icon-css3"></use>
                     </svg>
                     <h4 class="services__item-title">CSS</h4>
                     <p class="services__description">The next phase after marking up a website is to make all that boring and bold text on the website look beautiful. I begin each project with a mobile first approach by styling the website to look good on mobile devices then use media queries to adapt the content to the screen based on its' size.</p>
@@ -64,7 +64,7 @@
                     class = "services__icon">
                     <title id = "html">Follow Jamie Moore on Linked In</title>
                         <desc>The LinkedIn logo</desc>
-                        <use xlink:href="assets/img/sprite.svg#icon-javascript"></use>
+                        <use xlink:href="<?= get_stylesheet_directory_uri() ?>/assets/img/sprite.svg#icon-javascript"></use>
                     </svg>
                     <h4 class="services__item-title">JavaScript</h4>
                     <p class="services__description">Whenever it is needed, I utuilise the power of JavaScript to implement behaviour and interactivity to a website. My current knowledge of JavaScript is good - but not great- and I am currently working hard to improve my JavaScript skills.</p>
@@ -74,7 +74,7 @@
                     class = "services__icon">
                     <title id = "html">Follow Jamie Moore on Linked In</title>
                         <desc>The LinkedIn logo</desc>
-                        <use xlink:href="assets/img/sprite.svg#icon-user"></use>
+                        <use xlink:href="<?= get_stylesheet_directory_uri() ?>/assets/img/sprite.svg#icon-user"></use>
                     </svg>
                     <h4 class="services__item-title">User Experience Design</h4>
                     <p class="services__description">A strong passion of mine is user experience, after all, it is pointless having a website if your user is not going to enjoy using it. I have good knowledge of the user experience design process so any project I am involved in, I will ensure that the website is focused on the users needs and goals. This not only results in a better experience for your user, but you potentially have a loyal user/customer if they enjoy using your website.</p>

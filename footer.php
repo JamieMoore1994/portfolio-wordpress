@@ -13,7 +13,7 @@
                         <title id = "facebook">Follow Jamie Moore on Facebook</title>
                         <desc>Facebook logo</desc>
                         <desc>The Facebook logo</desc>
-                            <use xlink:href="assets/img/sprite.svg#icon-facebook"></use>
+                            <use xlink:href="<?= get_stylesheet_directory_uri() ?>/assets/img/sprite.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
@@ -23,7 +23,7 @@
                         class = "social__media-icon">
                         <title id = "github">Follow Jamie Moore on Github</title>
                         <desc>The Github logo</desc>
-                            <use xlink:href="assets/img/sprite.svg#icon-github"></use>
+                            <use xlink:href="<?= get_stylesheet_directory_uri() ?>/assets/img/sprite.svg#icon-github"></use>
                         </svg>
                     </a>
                 </li>
@@ -33,7 +33,7 @@
                         class = "social__media-icon">
                         <title id = "linked-in">Follow Jamie Moore on Linked In</title>
                         <desc>The LinkedIn logo</desc>
-                            <use xlink:href="assets/img/sprite.svg#icon-linkedin"></use>
+                            <use xlink:href="<?= get_stylesheet_directory_uri() ?>/assets/img/sprite.svg#icon-linkedin"></use>
                         </svg>
                     </a>
                 </li>
@@ -43,7 +43,7 @@
                         class = "social__media-icon">
                         <title id = "twitter">Follow Jamie Moore on Twitter</title>
                         <desc>The Twitter logo</desc>
-                            <use xlink:href="assets/img/sprite.svg#icon-twitter"></use>
+                            <use xlink:href="<?= get_stylesheet_directory_uri() ?>/assets/img/sprite.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>

@@ -71,4 +71,5 @@ include 'inc/shortcodes/blog-single-figure.php';
 include 'inc/shortcodes/blog-text-blocks.php';
 include 'inc/shortcodes/blog-text-block-with-title.php';
 include 'inc/shortcodes/blog-text-block-with-figure.php';
+include 'inc/shortcodes/blog-figcaption-block.php';
 

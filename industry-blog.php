@@ -1,7 +1,7 @@
 <?php
     $page = "industry-blog";
     $mainClass = "portfolio__header";
-    $pageClas = "";
+    $pageClass = "";
     $title = "Industry Blog - Website Design & Development - Jamie Moore";
     $description = "Brexit, the digital industry and the role of a front-end developer. Find out Jamie Moore's thoughts on all of this.";
     $canonical = "https://www.jamiegmoore.co.uk/industry-blog.php";
