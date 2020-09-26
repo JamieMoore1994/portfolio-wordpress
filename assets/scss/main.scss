@@ -1,7 +1,7 @@
 @import "global";
-@import 'classes';
+@import "classes";
 @import "mixins";
-@import 'typography';
+@import "typography";
 @import "variables";
 
 // Pages
@@ -11,11 +11,10 @@
 @import "pages/index";
 @import "pages/portfolio";
 @import "pages/projects";
-@import "pages/all-blogs"; 
+@import "pages/all-blogs";
 
 // Components
 @import "components/footer";
 @import "components/master-nav";
 @import "components/accessibility";
-@import 'components/buttons';
-
+@import "components/buttons";

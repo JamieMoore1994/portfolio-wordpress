@@ -72,4 +72,12 @@ include 'inc/shortcodes/blog-text-blocks.php';
 include 'inc/shortcodes/blog-text-block-with-title.php';
 include 'inc/shortcodes/blog-text-block-with-figure.php';
 include 'inc/shortcodes/blog-figcaption-block.php';
+include 'inc/shortcodes/blog-figures-large.php';
+include 'inc/shortcodes/blog-case-single-figure.php';
+include 'inc/shortcodes/blog-code-block.php';
+include 'inc/shortcodes/blog-external-resources-opener.php';
+include 'inc/shortcodes/blog-external-resources-close.php';
+include 'inc/shortcodes/blog-resources-link.php';
+include 'inc/shortcodes/blog-three-figures.php';
+include 'inc/shortcodes/blog-objectives.php';
 

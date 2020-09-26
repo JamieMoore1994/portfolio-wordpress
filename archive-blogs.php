@@ -19,25 +19,38 @@
         <!--Overall card section-->
         <article class="blogs">
             <ul class="blogs__cards">
+
+            <?php
+              $blogPosts = new WP_Query(array('post_type'=>'blogs'));
+            
+              if($blogPosts->have_posts()): 
+                while($blogPosts->have_posts()):
+                  $blogPosts->the_post();
+            ?>
                 
                 <!--The Industry Card-->
                 <li class="blogs__card-item">
-                        <a href = "/industry-blog.php" title = "Go to my industry blog" class = "blog-links">
-                            <figure class="blogs__photo">
-                                <img src="<?php bloginfo('template_url'); ?>/assets/img/kelly-robinson-LKkiME8oWKo-unsplash_1.JPG" alt="Skyline view of Manchester city centre buildings">
-                                <h2 class = "blogs__intro-title">The Industry</h2>
-                            </figure>
-                            <div class="blogs__intro">
-                                <div class="blogs__entry">
-                                    <span class="blogs__entry-date">Posted on: 20/10/2019</span>
-                                </div>
-                                <p>The UK digital industry, Brexit and the role of a front-end developer. What do I think and where do I stand in this rapidly changing industry?</p>
+                    <a href = "<?php the_permalink(); ?>" class = "blog-links">
+                        <figure class="blogs__photo">
+                            <?php the_post_thumbnail(); ?>
+                            <h2 class = "blogs__intro-title"><?php the_title(); ?></h2>
+                        </figure>
+                        <div class="blogs__intro">
+                            <div class="blogs__entry">
+                                <span class="blogs__entry-date">Posted on: <?php the_date(); ?></span>
                             </div>
+                        <p><?php the_excerpt(); ?></p>
+                    </div>
                     </a>
                 </li>
 
+                <?php
+                  endwhile;
+                  endif;
+                ?>
+
                 <!--Portfolio Development Card-->
-                <li class="blogs__card-item">
+                <!-- <li class="blogs__card-item">
                         <a href = "/portfolio-blog.php" title = "Go to my portfolio blog" class = "blog-links">
                             <figure class="blogs__photo">
                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/andrew-neel-cckf4TsHAuw-unsplash_1.JPG" alt="Laptop, coffee and notepad on table">
@@ -52,10 +65,10 @@
                                 </p>
                             </div>    
                         </a>
-                </li>
+                </li> -->
 
                 <!--Performance Card-->
-                <li class="blogs__card-item">
+                <!-- <li class="blogs__card-item">
                         <a href = "/performance-blog.php" title = "Go to my industry blog" class = "blog-links">
                             <figure class="blogs__photo">
                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/luke-chesser-JKUTrJ4vK00-unsplash_1.JPG" alt="Website metrics visually displayed on monitor">
@@ -69,10 +82,10 @@
                                 <p>The process to ensure my websites performance is good and ranks well on search engines.</p>
                             </div>
                         </a>
-                </li>
+                </li> -->
 
                 <!--Portfolio Improvements card-->
-                <li class="blogs__card-item">
+                <!-- <li class="blogs__card-item">
                     <a href = "/portfolio-improvements.php" title = "Go to my portfolio improvements blog" class = "blog-links">
                         <figure class="blogs__photo">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/blog-photos/sebastian-herrmann-jzTQVxCyKYs-unsplash.jpg" alt="An image of a man looking frustrated at his laptop">
@@ -85,10 +98,10 @@
                             <p>I built my first portfolio and since had to fix numerous errors.</p>
                         </div>
                     </a>
-                </li>
+                </li> -->
 
                 <!--SVG animation blog-->
-                <li class="blogs__card-item">
+                <!-- <li class="blogs__card-item">
                     <a href = "/svg-blog.php" title = "Go to my SVG animation blog" class = "blog-links">
                         <figure class="blogs__photo">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/blog-photos/svg-animated-blog.jpg" alt="Screen shot of SVG car created in Illustrator">
@@ -101,10 +114,10 @@
                             <p>Find out how I went from knowing nothing about SVG animations to creating a full animated sequence.</p>
                         </div>
                     </a>
-                </li>
+                </li> -->
 
                 <!--GreenSock blog card-->
-                <li class="blogs__card-item">
+                <!-- <li class="blogs__card-item">
                     <a href = "/greensock-blog" title = "Go to my GreenSock animation blog" class = "blog-links">
                         <figure class="blogs__photo">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/blog-photos/stars-gsap-blog.jpg" alt="Screen shot of the Explore Our Solar System landing page">
@@ -117,7 +130,7 @@
                             <p>My journey to learning GreenSock and then creating an animated website with GreenSock.</p>
                         </div>
                     </a>
-                </li>
+                </li> -->
        
             </ul>
         </article>

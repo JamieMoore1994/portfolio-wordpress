@@ -1,102 +1,107 @@
 /*--------------------------------------------
             Global blog styles
 --------------------------------------------*/
+#content {
+  br {
+    display: none;
+  }
+}
+
 .blog__credit {
-    color: $color-gold-darker;
+  color: $color-gold-darker;
 }
 
 .blog__links {
-    color: $color-gold-darker;
-    cursor: pointer;
-    transition: all 200ms ease-out;
+  color: $color-gold-darker;
+  cursor: pointer;
+  transition: all 200ms ease-out;
 
-    &:hover,
-    &:focus {
-        background-color: $color-gold-darker;
-        color: $color-grey-light;
-        text-decoration: none;
-        padding: .1rem;
-    }
+  &:hover,
+  &:focus {
+    background-color: $color-gold-darker;
+    color: $color-grey-light;
+    text-decoration: none;
+    padding: 0.1rem;
+  }
 }
 
 .blog__author {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: $color-gold-darker;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $color-gold-darker;
 
-    &--img {
-        border-radius: 50%;
-        height: 10rem;
-        width: 10rem;
-        margin: 3rem 0 1rem 0;
-    }
+  &--img {
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    margin: 3rem 0 1rem 0;
+  }
 
-    &-name {
-        font-size: 1.8rem;
-    }
+  &-name {
+    font-size: 1.8rem;
+  }
 
-    &-date {
-        font-size: 1.4rem;
-        font-style: italic;
-    }
+  &-date {
+    font-size: 1.4rem;
+    font-style: italic;
+  }
 }
-
 
 // Heading and introduction section of blogs
 .blog-content {
-    padding: 1rem;
+  padding: 1rem;
 
-    &__title {
-        margin-top: 1rem;
-        font-size: 2rem;
-        line-height: 1.2;
-        padding-bottom: .8rem;
-        color: $color-primary;
-    }
-    & p {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        color: $color-grey-dark;
-        padding: .8rem 0;
-    }
+  &__title {
+    margin-top: 1rem;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding-bottom: 0.8rem;
+    color: $color-primary;
+  }
+  & p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: $color-grey-dark;
+    padding: 0.8rem 0;
+  }
 }
 
 /*------------------------------------*/
 //600px
 @media screen and (min-width: 600px) {
-    .blog-content {
-        padding: 2rem;
+  .blog-content {
+    padding: 2rem;
 
-        &__title {
-            font-size: 2.8rem;
-            margin-top: 2rem;
-        }
+    &__title {
+      font-size: 2.8rem;
+      margin-top: 2rem;
     }
+  }
 }
 
 //750px
 @media screen and (min-width: 750px) {
-    .blog-content {
-        @include maxWidthSmall;
-        padding: 2rem 3rem;
-    }
+  .blog-content {
+    @include maxWidthSmall;
+    padding: 2rem 3rem;
+  }
 }
 
 //960px
 @media screen and (min-width: 960px) {
-    .blog-content {
-        @include maxWidthSmall;
+  .blog-content {
+    @include maxWidthSmall;
 
-        &__title {
-            font-size: 3rem;
-        }
-
-        & p {
-            font-size: 1.8rem;
-        }
+    &__title {
+      font-size: 3rem;
     }
+
+    & p {
+      font-size: 1.8rem;
+    }
+  }
 }
 
 // //1200px
@@ -108,261 +113,257 @@
 
 // Main blog body styling
 .blog-body {
+  padding: 1rem;
+
+  & p,
+  &__list--item {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: $color-grey-dark;
+    padding: 0.8rem 0;
+  }
+
+  &__list {
+    padding: 0 2rem;
+  }
+
+  &__titles {
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 1.5rem 0 0.5rem 0;
+    color: $color-gold-primary;
+  }
+
+  &__captions {
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem 2rem 1rem;
+    color: $color-primary;
+    font-style: italic;
+    align-self: flex-start;
+  }
+
+  &__examples {
+    &--item {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__figures {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+
+  .skills-report {
+    float: left;
+    shape-outside: circle(50%);
+    margin-top: 1rem;
+    shape-margin: 1vw;
+    margin-right: 1.3rem;
+  }
+
+  &__code-background {
+    background-color: $color-primary;
     padding: 1rem;
+    width: 100%;
 
-    & p, &__list--item {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        color: $color-grey-dark;
-        padding: .8rem 0;
+    .code-example {
+      color: $color-grey-light;
+      font-size: 1.5rem;
+      font-weight: 700;
     }
+  }
 
-    &__list {
-        padding: 0 2rem;
-    }
+  &__references {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    background-color: $color-grey-light-2;
+    padding: 2rem;
 
-    &__titles {
-        font-size: 2rem;
-        line-height: 1.2;
-        padding: 1.5rem 0 .5rem 0;
-        color: $color-gold-primary;
-    }
+    &--item {
+      font-size: 1.3rem;
+      color: $color-primary;
+      padding: 1rem 0;
 
-    &__captions {
-        font-size: 1.3rem;
-        padding: 0.5rem 1rem 2rem 1rem;
+      & a {
         color: $color-primary;
-        font-style: italic;
-        align-self: flex-start;
+      }
+    }
+  }
+
+  &__resources {
+    padding: 1.2rem 2rem;
+
+    & li {
+      padding: 0.5rem;
     }
 
-    &__examples {
-
-        &--item {
-            margin-bottom: 2rem;
-        }
+    & a {
+      text-decoration: underline;
+      color: $color-grey-dark;
+      font-size: 1.5rem;
     }
 
-    &__figures {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-
-        img {
-            box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
-        }
-    }   
-
-    .skills-report {
-        float: left;
-        shape-outside: circle(50%);
-        margin-top: 1rem;
-        shape-margin: 1vw;
-        margin-right: 1.3rem;
+    & a:hover,
+    & a:focus {
+      background-color: $color-button-background;
+      color: $color-grey-light;
+      transition: all 200ms ease-in;
+      text-decoration: none;
     }
-
-    &__code-background {
-        background-color: $color-primary;
-        padding: 1rem;
-        width: 100%;
-
-        .code-example {
-            color: $color-grey-light;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-    }
-
-    &__references {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        list-style: none;
-        background-color: $color-grey-light-2;
-        padding: 2rem;
-
-        &--item {
-            font-size: 1.3rem;
-            color: $color-primary;
-            padding: 1rem 0;
-
-            & a {
-                color: $color-primary;
-            }
-        }
-    }
-
-    &__resources {
-        padding: 1.2rem 2rem;
-
-        & li {
-            padding: .5rem;
-        }
-
-        & a {
-            text-decoration: underline;
-            color: $color-grey-dark;
-            font-size: 1.5rem;
-        }
-
-        & a:hover,
-        & a:focus {
-            background-color: $color-button-background;
-            color: $color-grey-light;
-            transition: all 200ms ease-in;
-            text-decoration: none;
-        }
-    }
+  }
 }
 
 .code-example {
-    color: $color-grey-dark;
-    font-size: 1.5rem;
-    font-weight: 700;
+  color: $color-grey-dark;
+  font-size: 1.5rem;
+  font-weight: 700;
 
-    &.inline {
-        color: $color-primary;
-        font-size: 1.5rem;
-    }
+  &.inline {
+    color: $color-primary;
+    font-size: 1.5rem;
+  }
 }
 
 /*------------------------------------*/
 //600px
 @media screen and (min-width: 600px) {
-    .blog-body {
-        padding: 2rem;
+  .blog-body {
+    padding: 2rem;
 
-        &__captions {
-            padding-left: 2rem;
-            font-size: 1.3rem;
-        }
+    &__captions {
+      padding-left: 2rem;
+      font-size: 1.3rem;
     }
+  }
 }
 
 //750px
 @media screen and (min-width: 750px) {
-    .blog-body {
+  .blog-body {
+    @include maxWidthSmall;
+    padding: 2rem 3rem;
+
+    &__titles {
+      font-size: 2.2rem;
+    }
+
+    &__captions {
+      padding-left: 3rem;
+      font-size: 1.3rem;
+    }
+
+    &__examples {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: start;
+      align-items: start;
+      gap: 2rem;
+      position: relative;
+
+      &--container {
+        position: relative;
+        left: 50%;
+      }
+
+      // This spans images accross both grid columns
+      &--item.large-image {
         @include maxWidthSmall;
-        padding: 2rem 3rem;
+        grid-column: 1 / span 2;
+      }
 
-        &__titles {
-            font-size: 2.2rem;
-        }
-
-        &__captions {
-            padding-left: 3rem;
-            font-size: 1.3rem;
-        }
-
-        &__examples {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-content: start;
-            align-items: start;
-            gap: 2rem;
-            position: relative;
-
-            &--container {
-                position: relative;
-                left: 50%;
-            }
-
-            // This spans images accross both grid columns
-            &--item.large-image {
-                @include maxWidthSmall;
-                grid-column: 1 / span 2;
-            }
-
-            // For the wireframe illustations on the portfolio development blog
-            .wireframes {
-                justify-self: center;
-            }
-        }
+      // For the wireframe illustations on the portfolio development blog
+      .wireframes {
+        justify-self: center;
+      }
     }
+  }
 
-    .code-example {
-        font-size: 1.8rem;
-    }
+  .code-example {
+    font-size: 1.8rem;
+  }
 }
 
 //960px
 @media screen and (min-width: 960px) {
-    .blog-body {
-        &__titles {
-            font-size: 2.5rem;
-        }
-
-        & p, &__list--item {
-            font-size: 1.8rem;
-            margin: 0 auto;
-        }
+  .blog-body {
+    &__titles {
+      font-size: 2.5rem;
     }
-} 
+
+    & p,
+    &__list--item {
+      font-size: 1.8rem;
+      margin: 0 auto;
+    }
+  }
+}
 
 // Adding padding to the titles inside so I dont affect every instance of this class
 .blog-container--large {
+  .normal-text {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: $color-grey-dark;
+  }
 
-    .normal-text {
-        font-size: 1.5rem;
-        padding: 1rem;
-        color: $color-grey-dark;
-    }
-
-    .blog-body__titles {
-        padding: 1rem;
-    }
+  .blog-body__titles {
+    padding: 1rem;
+  }
 }
 
 /*------------------------------------*/
 //600px
 @media screen and (min-width: 600px) {
-    .blog-container--large {
-
-        .normal-text {
-            padding: 2rem;
-        }
-
-        .blog-body__titles {
-            padding: 2rem;
-        }
+  .blog-container--large {
+    .normal-text {
+      padding: 2rem;
     }
+
+    .blog-body__titles {
+      padding: 2rem;
+    }
+  }
 }
 
 //750px
 @media screen and (min-width: 750px) {
-    .blog-container--large {
-
-        .blog-body__titles {
-            padding: 2rem 3rem;
-        }
+  .blog-container--large {
+    .blog-body__titles {
+      padding: 2rem 3rem;
     }
+  }
 }
 
 //960px
 @media screen and (min-width: 960px) {
-    .blog-container--large {
-
-        .normal-text {
-            font-size: 1.8rem;
-        }
-
-        .blog-body__titles {
-            @include maxWidthSmall;
-        }
+  .blog-container--large {
+    .normal-text {
+      font-size: 1.8rem;
     }
+
+    .blog-body__titles {
+      @include maxWidthSmall;
+    }
+  }
 }
 
 //1200px
 @media screen and (min-width: 1200px) {
-    .blog-container--large {
-        @include maxWidthMedium;
-    }
+  .blog-container--large {
+    @include maxWidthMedium;
+  }
 }
 
 .container--medium {
-    max-width: 1100px;
-    margin: 0 auto;
+  max-width: 1100px;
+  margin: 0 auto;
 }

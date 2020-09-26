@@ -14,7 +14,6 @@ function blogTextBlocksWithFigure($params, $content = null) {
   $return .= '
   <figure class = "skills-report">
     <img src="' . $imgsrc . '" alt="' . $alt . '">
-    <figcaption class = "blog-body__captions">' . $caption . '</figcaption>
   </figure>
   ';
 
