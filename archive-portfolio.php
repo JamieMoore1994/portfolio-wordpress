@@ -15,40 +15,31 @@
     </header>
 
     <main id = "content">
-        <section class = "live__music">
-            <h2 class="projects__main-title">Explore Some Of My Recent Projects Below</h2>
-            <div class="projects">
-                <figure class="projects__image">
-                    <img src="assets/img/live-music.jpg" alt="Live Music in Manchester homepage">
-                    <figcaption class = "industry__img-caption">
-                        The live music page of Live Music in Manchester website.
-                    </figcaption>
-                </figure>
-
-                <div class="projects__description">
-                    <h3 class="projects__title">Live Music in Manchester</h3>
-                    <p>Live Music in Manchester was a website created by me, and a team of three other students. The team were tasked with researching, designing, building and testing a website that showcases to users where they can find live music in Manchester. This was done during the second year of university at The Manchester Metropolitan University on the web development degree.</p>
-                    <a href = "/live-music.php" class = "btn" title = "Live Music project">View Live Music project</a>
-                </div>
-            </div>
-        </section>
-
-        <section class = "live__music two">
-            <div class="projects">
-                <figure class="projects__image">
-                    <img src="assets/img/plan-it-page.jpg" alt="The Plan It logo for the Plan It webssite">
-                    <figcaption class = "industry__img-caption">
-                        The plan your day page of the Plan It website.
-                    </figcaption>
-                </figure>
-
-                <div class="projects__description">
-                    <h3 class="projects__title">Plan It</h3>
-                    <p>Plan It another group project in university in which we were tasked with creating a website that showcases places you could go to in Manchester City Center. This website was more about how the group performed together - as the unit was called Digital Project Management - rather than being judged on the quality of the website.</p>
-                    <a href = "/plan-it.php" class = "btn" title = "Plan It project">View Plan It project</a>
-                </div>
-            </div>
-        </section>
+      <div class="portfolioPage__container">
+        <ul class="portfolioPage__list">
+        <?php
+              $workPosts = new WP_Query(array('post_type'=>'portfolio'));
+            
+              if($workPosts->have_posts()): 
+                while($workPosts->have_posts()):
+                  $workPosts->the_post();
+                  $featuredImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
+            ?>
+          <li class="portfolioPage__listItem">
+            <a href="<?php the_permalink(); ?>" class="portfolioPage__link">
+              <div class="portfolioPage__image" style="background-image:url(<?= $featuredImage ?>)">
+              <h2 class="portfolioPage__title"><?php the_title(); ?></h2>
+              <h3 class="portfolioPage__subTitle"><?= get_the_excerpt(); ?></h3>
+              </div>
+              <span class="portfolioPage__viewStudy">View case study</span>
+            </a>
+          </li>
+          <?php
+            endwhile;
+            endif;
+          ?>
+        </ul>
+      </div>
     </main>
 
 <?php

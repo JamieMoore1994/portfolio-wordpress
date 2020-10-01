@@ -38,6 +38,7 @@
     <!-- iPhone X, iPhone 8 Plus, iPhone 7 Plus, iPhone 6s Plus, iPhone 6 Plus -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/site-logo.jpg">
 </head>
+<body>
 <!--Accessibility Button-->
 <a href="#content" class="skip-link">Skip To Content</a>
 

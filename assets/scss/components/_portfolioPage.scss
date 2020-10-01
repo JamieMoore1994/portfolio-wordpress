@@ -1,0 +1,111 @@
+.portfolioPage {
+  &__container {
+    max-width: 120rem;
+    margin: 5rem auto;
+    padding: 5rem 2rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 6rem;
+  }
+
+  &__listItem {
+    max-height: 420px;
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: margin-top 0.3s ease;
+
+    &:hover,
+    &:focus {
+      margin-top: -1rem;
+
+      .portfolioPage__viewStudy {
+        opacity: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .portfolioPage__title,
+      .portfolioPage__subTitle {
+        opacity: 0;
+        transform: translateY(-100px);
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 33.5vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 420px;
+    min-height: 420px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(16, 29, 44, 0.5);
+      border-radius: 3rem;
+    }
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    line-height: 1.2;
+    color: $color-grey-light;
+    z-index: 2;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  &__subTitle {
+    letter-spacing: 0.2rem;
+    line-height: 1.2;
+    color: $color-grey-light;
+    z-index: 2;
+    font-size: 1.6rem;
+    opacity: 0.7;
+    margin-top: 1rem;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  &__viewStudy {
+    position: absolute;
+    display: block;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    letter-spacing: 0.2rem;
+    line-height: 1.2;
+    color: #f9f7f6;
+    z-index: 2;
+    font-size: 1.8rem;
+    text-align: center;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+}

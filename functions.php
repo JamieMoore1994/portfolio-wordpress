@@ -81,3 +81,7 @@ include 'inc/shortcodes/blog-resources-link.php';
 include 'inc/shortcodes/blog-three-figures.php';
 include 'inc/shortcodes/blog-objectives.php';
 
+include 'inc/shortcodes/case-study-intro.php';
+
+
+
