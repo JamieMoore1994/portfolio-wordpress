@@ -1,0 +1,44 @@
+.textRight {
+  &__content {
+    width: 50%;
+    margin: 0 0 10rem auto;
+  }
+
+  &__title {
+    font-size: 3rem;
+    color: $color-gold-primary;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+}
+
+//-----------------------------------//
+
+// < 600px
+@media screen and (max-width: $s) {
+  .textRight__content {
+    margin: 0 0 5rem auto;
+    width: 75%;
+  }
+}
+
+//-----------------------------------//
+
+// < 500px
+@media screen and (max-width: $xs) {
+  .textRight__content {
+    width: 85%;
+  }
+}
+
+//-----------------------------------//
+
+// < 400px
+@media screen and (max-width: $xxs) {
+  .textRight__content {
+    width: 90%;
+  }
+}
+
+//-----------------------------------//

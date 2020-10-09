@@ -17,15 +17,15 @@ function caseStudyIntro($params, $content = null) {
     <div class="caseStudy__container container">
       <div class="caseStudy__introContent">
         <h2 class="caseStudy__introTitle">' . $heading2 . '</h2>
-        <p class="caseStudy__text">' . $textone . '</p>';
+        <p class="caseStudy__text bodytext">' . $textone . '</p>';
         if($texttwo) {
           $return .= '
-            <p class="caseStudy__text">' . $texttwo . '</p>
+            <p class="caseStudy__text bodytext">' . $texttwo . '</p>
           ';
         }
         if($textthree) {
           $return .= '
-            <p class="caseStudy__text">' . $textthree . '</p>
+            <p class="caseStudy__text bodytext">' . $textthree . '</p>
           ';
         }
         $return .= '

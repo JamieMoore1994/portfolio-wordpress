@@ -1,0 +1,240 @@
+.caseTestimonial {
+  margin-bottom: 10rem;
+
+  &__container {
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      color: $color-gold-primary;
+      font-size: 30rem;
+      font-family: a;
+    }
+
+    &::before {
+      content: open-quote;
+      top: -40%;
+      left: -130px;
+      transform: rotate(5deg);
+    }
+
+    &::after {
+      content: close-quote;
+      bottom: -65%;
+      right: -130px;
+      transform: rotate(-5deg);
+    }
+  }
+
+  &__title {
+    color: $color-gold-primary;
+    font-size: 4.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  &__lineTwo {
+    display: block;
+  }
+
+  &__contentHolder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__imageHolder {
+    width: 40%;
+    height: 20vw;
+    max-height: 450px;
+    min-height: 350px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(225, 225, 225, 0.3);
+      border-radius: 3rem;
+    }
+  }
+
+  &__image {
+    border-radius: 3rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__quoteHolder {
+    width: 50%;
+  }
+
+  &__person {
+    color: $color-gold-primary;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+}
+
+//-----------------------------------//
+
+// < 1400px
+@media screen and (max-width: $xxxl) {
+  .caseTestimonial {
+    &__container::before,
+    &__container::after {
+      font-size: 22rem;
+    }
+
+    &__container {
+      &::before {
+        left: -70px;
+      }
+
+      &::after {
+        right: -70px;
+      }
+    }
+  }
+}
+
+//-----------------------------------//
+
+// < 1200px
+@media screen and (max-width: $xxl) {
+  .caseTestimonial {
+    &__container::before,
+    &__container::after {
+      font-size: 16rem;
+    }
+
+    &__container {
+      &::before {
+        left: -40px;
+        top: -33%;
+      }
+
+      &::after {
+        right: -40px;
+        bottom: -50%;
+      }
+    }
+  }
+}
+
+//-----------------------------------//
+
+// < 1080px
+@media screen and (max-width: $xl) {
+  .caseTestimonial {
+    &__container::before,
+    &__container::after {
+      font-size: 15rem;
+    }
+
+    &__container {
+      &::before {
+        left: 0;
+        top: -25%;
+      }
+
+      &::after {
+        right: 0;
+        bottom: -30%;
+      }
+    }
+  }
+}
+
+//-----------------------------------//
+
+// < 960px
+@media screen and (max-width: $l) {
+  .caseTestimonial {
+    &__container::before,
+    &__container::after {
+      font-size: 10rem;
+    }
+
+    &__container {
+      &::before {
+        top: -20%;
+      }
+
+      &::after {
+        bottom: -20%;
+      }
+    }
+
+    &__title {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+//-----------------------------------//
+
+// < 750px
+@media screen and (max-width: $m) {
+  .caseTestimonial {
+    &__container {
+      &::before {
+        top: -15%;
+      }
+
+      &::after {
+        bottom: -20%;
+      }
+    }
+
+    &__title {
+      font-size: 3.5rem;
+    }
+
+    &__contentHolder {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__imageHolder {
+      width: 100%;
+    }
+
+    &__quoteHolder {
+      width: 80%;
+      margin-top: 2rem;
+    }
+  }
+}
+
+//-----------------------------------//
+
+// < 600px
+@media screen and (max-width: $s) {
+  .caseTestimonial {
+    &__quoteHolder {
+      width: 100%;
+    }
+  }
+}
+
+//-----------------------------------//
+
+// < 500px
+@media screen and (max-width: $xs) {
+  .caseTestimonial {
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}
+
+//-----------------------------------//

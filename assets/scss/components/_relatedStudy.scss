@@ -1,0 +1,68 @@
+.relatedStudy {
+  margin-bottom: 10rem;
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 6rem;
+  }
+
+  &__listItem {
+    width: 100%;
+  }
+
+  &__listLink {
+    color: $color-grey-dark;
+    text-decoration: none;
+    height: 100%;
+    transition: transform 0.2s ease;
+    position: relative;
+    display: block;
+    height: 100%;
+    background-color: rgba(16, 29, 44, 0.9);
+    border-radius: 3rem;
+  }
+
+  &__imageHolder {
+    width: 100%;
+    height: 30vw;
+    max-height: 300px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(16, 29, 44, 0.5);
+      border-radius: 3rem 3rem 0 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3rem 3rem 0 0;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 2rem 1rem;
+    line-height: 1.2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: $color-grey-light;
+  }
+
+  &__intro {
+    color: $color-grey-light;
+    border-radius: 0 0 3rem 3rem;
+    padding: 5rem 1rem;
+  }
+}

@@ -81,7 +81,15 @@ include 'inc/shortcodes/blog-resources-link.php';
 include 'inc/shortcodes/blog-three-figures.php';
 include 'inc/shortcodes/blog-objectives.php';
 
+// Case study shortcodes
 include 'inc/shortcodes/case-study-intro.php';
+include 'inc/shortcodes/case-study-large-banner.php';
+include 'inc/shortcodes/case-study-text-left.php';	
+include 'inc/shortcodes/case-study-text-right.php';
+include 'inc/shortcodes/case-study-insight.php';
+include 'inc/shortcodes/case-study-two-images.php';
+include 'inc/shortcodes/case-study-two-text.php';
+include 'inc/shortcodes/case-study-testimonial.php';
 
 
 
